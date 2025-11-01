@@ -6,12 +6,11 @@ public class FVCalc {
 		int years = Integer.parseInt(args[2]);
 		double yield = deposit;
 
-		for (int i=0; i<years; i++) {
+		for (int i = 0; i < years; i++) {
 			yield = yield + (yield * percent);
 		}
 
-		int f = (int) yield;
-
-		System.out.println("After " + years +" years, $" + deposit + " saved at " + (percent * 100) + "% will yield $" + f);
+		int yieldInt = (int) yield;
+		System.out.println("After " + years +" years, $" + deposit + " saved at " + (percent * 100) + "% will yield $" + yieldInt);
 	}
 }

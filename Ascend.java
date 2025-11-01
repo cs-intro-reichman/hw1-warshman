@@ -10,12 +10,13 @@ public class Ascend {
 		int num1 = (int) Math.round(multiplyer1 * limit);
 		int num2= (int) Math.round(multiplyer2 * limit);
 		int num3 = (int) Math.round(multiplyer3 * limit);
+		
 		System.out.println(num1 + " " + num2 + " " + num3);
 		
 		int min = Math.min(Math.min(num1, num2), num3);
 		int max = Math.max(Math.max(num1, num2), num3);
-		int med = num1 + num2 + num3 - max - min;
+		int medium = num1 + num2 + num3 - max - min;
 
-		System.out.println(min + " " + med + " " + max);
+		System.out.println(min + " " + medium + " " + max);
 	}
 }
