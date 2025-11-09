@@ -1,3 +1,5 @@
+// Overall good, very clean
+
 // Computes the future value of a saving investment.
 public class FVCalc {
 	public static void main(String[] args){
@@ -10,7 +12,7 @@ public class FVCalc {
 			yield = yield + (yield * percent);
 		}
 
-		int yieldInt = (int) yield;
+		int yieldInt = (int) yield; //yieldAsInt would be a more correct way to name it
 
 		System.out.println("After " + years +" years, $" + deposit + " saved at " + (percent * 100) + "% will yield $" + yieldInt);
 	}
